@@ -3,17 +3,16 @@
 //
 #include <stdio.h>
 
-// count characters in input; 1st version
+// count characters in input; 2nd version
 
 int main(void) {
-    long nc = 0;
+    double nc = 0;
     int m;
-    while((m = getchar())!=EOF) {
-        if(m!='\n'){
-            ++nc;
+    for(nc=0;(m=getchar())!=EOF;nc++) {
+        if(m=='\n'){
+            --nc;
         }
     }
-//    ++nc;
-    printf("%ld\n",nc);
+    printf("%.0f\n",nc);
 }
 
