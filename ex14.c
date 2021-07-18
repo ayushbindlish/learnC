@@ -18,6 +18,7 @@ void print_letters(char arg[]) {
 	int i = 0;
 	int length  = strlen(arg);
 	for(i = 0;i<length;i++) {
+	//for(i = 0;arg[i]!='\0';i++) {
 		char ch = arg[i];
 		
 
